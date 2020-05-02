@@ -33,7 +33,9 @@ void register_publish_hooks() {
     JsonObject& info = (*root)["info"];
     data["myName"] = myName;
     data["millis"] = millis();
-    // data["temperature"] = bme.temperature;
+    data["temperature"] = bme.readTemperature();
+    data["humidity"] = bme.readHumidity();
+    data["pressure"] = bme.readPressure();
     // data["humidity"] = bme.humidity;
     // data["pressure"] = bme.pressure;
     // data["altitude_hPa"] = bme.readAltitude(SEALEVELPRESSURE_HPA);
