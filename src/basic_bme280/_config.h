@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 /* BOARD INFO */
-String DEVICE_NAME      = "BME280-04";
+String DEVICE_NAME      = "";
 
 /* WIFI INFO */
 String WIFI_SSID        = "CMMC_Sinet_2.4G";
